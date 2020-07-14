@@ -5,7 +5,11 @@ module.exports = {
       display: ['Bree Serif', 'serif'],
       body: ['Roboto', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'myGray': '#262626',
+      },
+    },
   },
   variants: {},
   plugins: [],
