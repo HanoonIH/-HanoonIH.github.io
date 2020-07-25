@@ -2,4 +2,8 @@
 
 @tailwind components;
 
+.tech-tag {
+    @apply bg-yellow-400 font-semibold my-1 mr-2 px-3
+}
+
 @tailwind utilities;

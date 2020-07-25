@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main/special.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Devonshire&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="main/script.js"></script>
 </head>
 <body class="">
 
@@ -20,7 +21,9 @@
             <!-- <h1 class="px-5 mx-2 font-body text-lg py-1 hover:font-medium rounded-lg hover:bg-gray-200 hover:text-gray-900 cursor-pointer">Work</h1>
             <h1 class="px-5 font-body text-lg py-1 hover:font-medium rounded-lg hover:bg-gray-200 hover:text-gray-900 cursor-pointer">About me</h1>
             <h1 class="px-5 mx-2 font-body text-lg py-1 hover:font-medium rounded-lg hover:bg-gray-200 hover:text-gray-900 cursor-pointer">Blog</h1> -->
+            <a href="#social-links">
             <h1 class="px-5 ml-2 font-body text-lg text-gray-200 py-1 bg-gray-700 hover:bg-gray-900 rounded-lg hover:text-white cursor-pointer">Contact</h1>
+            </a>
         </div>
     </nav>
 
@@ -72,28 +75,90 @@
         </div>
     </div> -->
 
-    <div class="px-5 md:px-10 lg:px-24 py-10 text-left text-3xl">
+    <div id="projectsDiv" class="px-5 md:px-10 lg:px-24 py-10 ">
+        <h1 class="text-5xl tracking-wide text-gray-900 font-display font-semibold">Portfolio</h1>
+        <div class="md:flex">
+            <!-- Project cards -->
+            <div class="max-w-md m-5 ml-0 rounded-lg border-4 border-gray-800">
+                <a target="_blank" href="https://hanoonih.github.io/Covid19-India-live-statistics/">
+                <img class="flex-1 rounded-lg" src="images/project_thumbnails/image_2020-07-25_16-09-48.png" alt="">
+                </a>
+                <div class=" p-4">
+                    <h1 class="text-3xl font-semibold">Covid19 India live status</h1>
+                    <p class="text-xl">This is my first pesonal project.
+                        <br> 
+                    </p>
+                    <a class="italic font-semibold hover:text-blue-700" target="_blank" href="https://hanoonih.github.io/Covid19-India-live-statistics/">Visit <i class="fas fa-external-link-square-alt text-gray-800 hover:text-blue-700"></i></a>
+                    <!-- <div class="grid grid-flow-row grid-cols-3">
+                        <p class="tech-tag">TailwindCSS</p>
+                        <p class="tech-tag">jQuery</p>
+                        <p class="tech-tag">Chart.js</p>
+                    </div> -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="px-5 md:px-10 lg:px-24 py-10 text-left text-3xl bg-gray-200">
         <h1 class="font-display text-gray-800">I'm Learning to code with the help of Internet.<br>
             <span class="text-black">I'll be a <span class="text-red-800">Full-stack Web Developer</span>, 
             <span class="text-4xl">Insha-Allah.</span>
-            </span><br><br>
+            </span><br>
             Currently I'm doing a Bachelor degree in Arabic (Afsal-ul-Ulama) at <span class="text-gray-900 text-4xl">Madeenathul Uloom
             Arabic College, Pulikkal</span> under the University of Calicut.
         </h1>
         <br>
         <h1 class="font-display text-gray-900 ">
-            Now I'm able to design static websites, and available as a Freelancer.<br><br>
+            Now I'm able to design static websites, and available as a Freelancer.<br>
             Connect with me in <a href="https://www.instagram.com/hanoonih/" target="_blank"><span class="text-pink-600 hover:text-pink-500 cursor-pointer">Instagram</span></a> or fill the contact form for hiring me for your business' web solutions.
         </h1>
     </div>
 
-    <div class="bg-myGray px-5 md:px-10 lg:px-24 py-10 text-center" id="social-links">
-        <h1 class="font-semibold text-yellow-300">Connect with me:</h1><br>
-        <a href="https://github.com/HanoonIH" target="_blank"><i class="fab fa-github  text-5xl px-3 text-gray-200 hover:text-white"></i></a>
-        <a href="https://www.instagram.com/hanoonih/" target="_blank"><i class="fab fa-instagram text-5xl px-3 text-pink-600 hover:text-pink-500"></i></a>
-        <a href="https://www.facebook.com/HanoonHih" target="_blank"><i class="fab fa-facebook-f text-5xl px-3 text-blue-800 hover:text-blue-700"></i></a>
-        <a href="https://twitter.com/hanoon_ih" target="_blank"><i class="fab fa-twitter text-5xl px-3 text-blue-600 hover:text-blue-500"></i></a>
+    <div class="bg-myGray px-5 md:px-10 lg:px-24 py-10 text-center flex flex-col" id="social-links">
+        <h1 class="text-3xl text-white font-display tracking-wide"><i class="fas fa-paper-plane text-2xl pr-3"></i>Contact me.</h1>
+        <div class="w-full my-5">
+            <form class="w-full bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div class="flex flex-wrap -mx-3">
+                  <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
+                    <label class="text-left block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="grid-first-name">
+                      Name
+                    </label>
+                    <input onclick="formNotReady()" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Your Name..." required>
+                    <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                  </div>
+                  <div class="w-full md:w-1/2 px-3 mb-6">
+                    <label class="text-left block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="grid-last-name">
+                      Email
+                    </label>
+                    <input onclick="formNotReady()"  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" placeholder="name@email.com" required>
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-5">
+                  <div class="w-full px-3">
+                    <label class="text-left block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="grid-password">
+                      Message
+                    </label>
+                    <textarea onclick="formNotReady()" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="textarea" placeholder="Type your message here..." required></textarea>
+                    </textarea>
+                    
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-2 px-3">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        Submit
+                      </button>
+                </div>
+              </form>
+        </div>
         
+        <div>
+            <h1 class="font-semibold text-yellow-300">Connect with me:</h1><br>
+            <a href="https://github.com/HanoonIH" target="_blank"><i class="fab fa-github  text-5xl px-3 text-gray-200 hover:text-white"></i></a>
+            <a href="https://www.instagram.com/hanoonih/" target="_blank"><i class="fab fa-instagram text-5xl px-3 text-pink-600 hover:text-pink-500"></i></a>
+            <a href="https://www.facebook.com/HanoonHih" target="_blank"><i class="fab fa-facebook-f text-5xl px-3 text-blue-800 hover:text-blue-700"></i></a>
+            <a href="https://twitter.com/hanoon_ih" target="_blank"><i class="fab fa-twitter text-5xl px-3 text-blue-600 hover:text-blue-500"></i></a>
+        </div>    
     </div>
 
     <div class="text-gray-900 font-bold justify-between px-5 md:px-10 lg:px-24 py-3 items-center">
