@@ -118,20 +118,23 @@
     <div class="bg-myGray px-5 md:px-10 lg:px-24 py-10 text-center flex flex-col" id="social-links">
         <h1 class="text-3xl text-white font-display tracking-wide"><i class="fas fa-paper-plane text-2xl pr-3"></i>Contact me.</h1>
         <div class="w-full my-5">
-            <form class="w-full bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form class="w-full bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+             action="https://formspree.io/maypavvz" method="POST">
                 <div class="flex flex-wrap -mx-3">
                   <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
                     <label class="text-left block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="grid-first-name">
                       Name
                     </label>
-                    <input onclick="formNotReady()" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Your Name..." required>
+                    <input  class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" placeholder="Your Name..." required
+                    type="text" name="name">
                     <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
                   </div>
                   <div class="w-full md:w-1/2 px-3 mb-6">
                     <label class="text-left block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="grid-last-name">
                       Email
                     </label>
-                    <input onclick="formNotReady()"  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" placeholder="name@email.com" required>
+                    <input   class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" placeholder="name@email.com" required
+                    type="email" name="_replyto">
                   </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-5">
@@ -139,15 +142,15 @@
                     <label class="text-left block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="grid-password">
                       Message
                     </label>
-                    <textarea onclick="formNotReady()" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="textarea" placeholder="Type your message here..." required></textarea>
-                    </textarea>
+                    <textarea  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="textarea" placeholder="Type your message here..." required
+                    name="message"></textarea>
                     
                   </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-2 px-3">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Send">
                         Submit
-                      </button>
+                    </button>
                 </div>
               </form>
         </div>
